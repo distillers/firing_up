@@ -1,5 +1,5 @@
 /**
- * ex-1 shanky code
+ * ex-1 shanky shenky code
  */
 var myName = {
     first: 'Frank',
@@ -34,7 +34,7 @@ var changeDetails = (function () {
     }, step * 200)
   };
 
-  console.log("6:",myName.first, myName.last, age, country);
+  console.log("6:", myName.first, myName.last, age, country);
 
   return {
     reduceAge : reduceAge,
