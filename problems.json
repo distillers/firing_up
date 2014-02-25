@@ -1,0 +1,13 @@
+[{"priority": 1,
+  "title": "JavaScript sucks",
+  "description": "The depths to which JavaScript sucks is well-documented and well-understood. Its main faults are: its lack of module system, weak-typing, verbose function syntax, late binding², which has led to the creation of various static analysis tools to alleviate this language flaw, but with limited success (there is even a static type checker), finicky equality/automatic conversion, this behaviour, and lack of static types."
+},{"priority": 2,
+   "title": "We need JavaScript",
+   "description": "Using it for what it is good for, i.e. providing a platform for browser development, but not using the language per se, is therefore desirable, and many are working to achieve this, in varying forms. There are various ways to do it, but we ought to opt for compiling an existing language, Haskell, to JavaScript, because we do not have time to learn or teach other people a new language, garner a new library set and a new type checker and all that Haskell implementations provide.:"
+},{"priority": 3,
+   "title": "No OOP ",
+   "description": "I am not familiar with any other way to structure imperative programs. Yes, JavaScript has a rudimentary object model, but literally no one knew how it actually worked."
+},{"priority": 4,
+   "title": "No standard library",
+   "description": "Copying functions from forums and pasting them into your code. Not fun."
+}]
