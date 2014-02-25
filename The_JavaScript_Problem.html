@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="generator" content="MediaWiki 1.19.5-1+deb7u1" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/haskellwiki/opensearch_desc.php" title="HaskellWiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://www.haskell.org/haskellwiki/api.php?action=rsd" />
+<link rel="copyright" href="/haskellwiki/HaskellWiki:Copyrights" />
+<link rel="alternate" type="application/atom+xml" title="HaskellWiki Atom feed" href="/haskellwiki/index.php?title=Special:RecentChanges&amp;feed=atom" />		<title>The JavaScript Problem - HaskellWiki</title>
+		<style type="text/css" media="screen, projection">/*<![CDATA[*/
+			@import "http://www.haskell.org/wikistatic/skins//common/shared.css?303";
+			@import "http://www.haskell.org/wikistatic/skins//hawiki/main.css?303";
+		/*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="http://www.haskell.org/wikistatic/skins//common/commonPrint.css?303" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "http://www.haskell.org/wikistatic/skins//hawiki/IE50Fixes.css?303";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "http://www.haskell.org/wikistatic/skins//hawiki/IE55Fixes.css?303";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "http://www.haskell.org/wikistatic/skins//hawiki/IE60Fixes.css?303";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "http://www.haskell.org/wikistatic/skins//hawiki/IE70Fixes.css?303";</style><![endif]-->
+		<!--[if lte IE 7]><script type="text/javascript" src="http://www.haskell.org/wikistatic/skins//hawiki/IEFixes.js?303"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+                                                <script type="text/javascript">
+                        var isMSIE55 = (window.showModalDialog && window.clipboardData && window.createPopup); /*alert("test: " + isMSIE55);*/</script>
+
+		<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"The_JavaScript_Problem","wgTitle":"The JavaScript Problem","wgCurRevisionId":57552,"wgArticleId":7764,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Web"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgRelevantPageName":"The_JavaScript_Problem","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script>
+		<script type="text/javascript" src="http://www.haskell.org/wikistatic/skins//common/wikibits.js?303"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+<script src="http://www.haskell.org/haskellwiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=hawiki&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"The_JavaScript_Problem","wgTitle":"The JavaScript Problem","wgCurRevisionId":57552,"wgArticleId":7764,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Web"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgRelevantPageName":"The_JavaScript_Problem","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":1,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"hawiki","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;},{},{});mw.loader.implement("user.tokens",function($){mw.user.tokens.set({"editToken":"+\\","watchToken":false});;},{},{});
+
+/* cache key: wikidb:resourceloader:filter:minify-js:7:befcdb5e3b24ff89f900613de9ed4ea3 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-The_JavaScript_Problem skin-hawiki">
+   <div id="topbar" class="noprint">
+	<div class="portlet noprint" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul><li><a class="homebutton" href="/haskellwiki/Haskell">Home</a></li>
+				<li id="pt-login"><a href="/haskellwiki/index.php?title=Special:UserLogin&amp;returnto=The+JavaScript+Problem">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+        	  <div id="p-search">
+	    <div id="searchBody" class="pBody">
+	       <form action="/haskellwiki/index.php" id="searchform"><div>
+	          <input type='hidden' name="title" value="Special:Search"/>
+	          <input id="searchInput" name="search" type="text" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" />
+
+	         </div></form>
+	    </div>
+	  </div>
+   </div>
+	<div id="globalWrapper">
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(http://www.haskell.org/wikistatic/haskellwiki_logo.png);" href="/haskellwiki/Haskell"></a>
+	</div>
+	<div id="column-content">
+        <div id="notice-area" class="noprint">
+        <!-- ?php $this->data['sitenotice'] = 'This is a test instance.  Do not edit, your changes will be lost.'; ? -->
+			        </div>
+        <div id="content-wrapper">
+	<div id="p-cactions" class="portlet noprint">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/haskellwiki/The_JavaScript_Problem">Page</a></li>
+				 <li id="ca-talk"><a href="/haskellwiki/Talk:The_JavaScript_Problem">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/haskellwiki/index.php?title=The_JavaScript_Problem&amp;action=edit">View source</a></li>
+				 <li id="ca-history"><a href="/haskellwiki/index.php?title=The_JavaScript_Problem&amp;action=history">History</a></li>			</ul>
+		</div>
+	</div>
+                        <div id="content">
+		<a name="top" id="top"></a>
+                        <h1 id="firstHeading" class="firstHeading">The JavaScript Problem</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From HaskellWiki</h3>
+			<div id="contentSub"></div>
+			<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#The_problem"><span class="tocnumber">1</span> <span class="toctext">The problem</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Mainstream_alternatives"><span class="tocnumber">2</span> <span class="toctext">Mainstream alternatives</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Coffeescript"><span class="tocnumber">2.1</span> <span class="toctext">Coffeescript</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#TypeScript"><span class="tocnumber">2.2</span> <span class="toctext">TypeScript</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Haskell_-.3E_JS"><span class="tocnumber">3</span> <span class="toctext">Haskell -&gt; JS</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#UHC"><span class="tocnumber">3.1</span> <span class="toctext">UHC</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Fay"><span class="tocnumber">3.2</span> <span class="toctext">Fay</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#GHCJS"><span class="tocnumber">3.3</span> <span class="toctext">GHCJS</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Haste"><span class="tocnumber">3.4</span> <span class="toctext">Haste</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Others"><span class="tocnumber">3.5</span> <span class="toctext">Others</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#FP_-.3E_JS"><span class="tocnumber">4</span> <span class="toctext">FP -&gt; JS</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Ur.2FWeb"><span class="tocnumber">5</span> <span class="toctext">Ur/Web</span></a>
+<ul>
+<li class="toclevel-2 tocsection-13"><a href="#OCaml"><span class="tocnumber">5.1</span> <span class="toctext">OCaml</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#GorrilaScript"><span class="tocnumber">5.2</span> <span class="toctext">GorrilaScript</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#JMacro"><span class="tocnumber">5.3</span> <span class="toctext">JMacro</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Roy.2C_PureScript"><span class="tocnumber">5.4</span> <span class="toctext">Roy, PureScript</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Idris"><span class="tocnumber">5.5</span> <span class="toctext">Idris</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a href="#Links"><span class="tocnumber">6</span> <span class="toctext">Links</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="#Footnotes"><span class="tocnumber">7</span> <span class="toctext">Footnotes</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="The_problem">1  The problem </span></h2>
+<p>The JavaScript problem is two-fold and can be described thus:
+</p>
+<ol><li> <b>JavaScript sucks.</b> The depths to which JavaScript sucks is well-documented and well-understood. Its main faults are: its lack of module system, weak-typing, verbose function syntax¹, late binding², which has led to the creation of various static analysis tools to alleviate this language flaw³, but with limited success⁴ (there is even a static type checker⁵), finicky equality/automatic conversion, <code>this</code> behaviour, and lack of static types.
+</li></ol>
+<ol><li> <b>We need JavaScript.</b> Using it for what it is good for, i.e. providing a platform for browser development, but not using the language <i>per se</i>, is therefore desirable, and many are working to achieve this, in varying forms. There are various ways to do it, but we ought to opt for compiling an existing language, Haskell, to JavaScript, because we do not have time to learn or teach other people a new language, garner a new library set and a new type checker and all that Haskell implementations provide.
+</li></ol>
+<h2> <span class="mw-headline" id="Mainstream_alternatives">2  Mainstream alternatives </span></h2>
+<h3> <span class="mw-headline" id="Coffeescript">2.1  Coffeescript </span></h3>
+<p>It makes many aspects of Javascript sane and convenient, and you get a compilation check that verifies syntax, however it still suffers greatly from weak-typing.
+</p>
+<h3> <span class="mw-headline" id="TypeScript">2.2  TypeScript </span></h3>
+<p>Structural typing with traditional generics on top of Javascript.
+Of all the alternatvies, TypeScript's advantage is that it makes no changes to Javascript. Existing javascript code that passes jshint is valid Typescript code. TypeScript also adds features from the latest javascript standards that it can compile down to older versions of javascript. TypeScript is by far the easiest javascript variant to learn. The downside is that one might desire a better language then just javascript + types.
+</p><p>TypeScript defaults to dynamic typing when it can't figure the type out. However, it now has a noImplicitAny setting that will give a compilation error if it can't figure out the type.
+</p><p>Structural sub-typing seems a good fit for JavaScript. 
+Perhaps Typescript's biggest problem is that null is a valid value for any type.
+</p>
+<h2> <span class="mw-headline" id="Haskell_-.3E_JS">3  Haskell -&gt; JS </span></h2>
+<h3> <span class="mw-headline" id="UHC">3.1  UHC </span></h3>
+<p>Original blog post <a rel="nofollow" class="external text" href="https://github.com/atzedijkstra/javascript-runtime-for-UHC">here.</a> Quickstart guide <a rel="nofollow" class="external text" href="http://chrisdone.com/posts/2012-01-06-uhc-javascript.html">here.</a> A more in-depth discussion about the current capabilities of the backend <a rel="nofollow" class="external text" href="http://www.norm2782.com/improving-uhc-js-report.pdf">here.</a> For an example of using the JavaScript compilation for a real app see this <a rel="nofollow" class="external text" href="http://alessandrovermeulen.me/2012/01/26/getting-rid-of-javascript-with-haskell/">blog post</a>, there is also a port of wxAsteroids to the browser (see <a rel="nofollow" class="external text" href="http://uu-computerscience.github.io/js-asteroids/">github</a> or a <a rel="nofollow" class="external text" href="http://www.rubendegooijer.nl/posts/2013-04-06-haskell-oop.html">blog post</a>). 
+</p>
+<ul><li> Beta.
+</li><li> Only works for UHC, but promising. 
+</li><li> UHC compiles enough of Hackage to be very useful.
+</li><li> Doesn't produce an explosion of code, seemingly.
+</li><li> Fairly substantial JS/DOM/W3C/HTML5 API.
+</li><li> Currently works.
+</li></ul>
+<h3> <span class="mw-headline" id="Fay">3.2  Fay </span></h3>
+<p>Website: <a rel="nofollow" class="external free" href="http://fay-lang.org/">http://fay-lang.org/</a> Discussion on Reddit: <a rel="nofollow" class="external text" href="http://www.reddit.com/r/haskell/comments/11yrpi/fay_slides/">Fay slides</a>. The package is on <a rel="nofollow" class="external text" href="http://hackage.haskell.org/package/fay">Hackage</a>. Fetch with Git: 
+</p>
+<pre> git clone <a rel="nofollow" class="external free" href="git://github.com/faylang/fay.git">git://github.com/faylang/fay.git</a>
+</pre>
+<ul><li> Compiles a subset of Haskell, needs more
+</li><li> Currently works.
+</li></ul>
+<h3> <span class="mw-headline" id="GHCJS">3.3  GHCJS </span></h3>
+<p>The Github page is <a rel="nofollow" class="external text" href="https://github.com/ghcjs/ghcjs">here.</a>
+</p>
+<ul><li> Alpha.
+</li><li> Works.
+</li><li> Incomplete.
+</li><li> Nicely designed.
+</li><li> Compiles most pure Haskell libraries no problem.
+</li><li> FFI to JS works, and the author, sviperll is a helpful guy.
+</li></ul>
+<h3> <span class="mw-headline" id="Haste">3.4  Haste </span></h3>
+<p><a rel="nofollow" class="external text" href="https://github.com/valderman/haste-compiler">Haste on GitHub</a>, <a rel="nofollow" class="external text" href="http://hackage.haskell.org/package/haste-compiler">on Hackage</a>, <a rel="nofollow" class="external text" href="http://ekblad.cc/hastereport.pdf">thesis</a>.
+</p>
+<ul><li> Seamless, type-safe single program framework for client-server communication
+</li><li> Easy Javascript interoperability
+</li><li> Generates small, fast, minifiable code.
+</li><li> Lightweight concurrency, Cabal integration, FFI and GHC extensions supported.
+</li><li> Cross platform.
+</li><li> Works.
+</li></ul>
+<h3> <span class="mw-headline" id="Others">3.5  Others </span></h3>
+<ul><li> <a rel="nofollow" class="external text" href="https://github.com/johang88/haskellinjavascript">Haskell interpreter in JS</a> — An interpreter. Haven't tried but is apparently dead.
+</li><li> YHC JS backend — Beta-ish. Apparently works, but I was unable to compile YHC, so haven't tried yet. I would be interested in anyone's experience using it. There's <a rel="nofollow" class="external text" href="http://www.haskell.org/haskellwiki/Yhc/Javascript">an old wiki page</a> about Yhc's JavaScript support, but Yhc itself is a dead project.
+</li><li> Emscripten — not Haskell→JS, but compiles LLVM/Clang output to JavaScript. Could possibly be used for GHC→LLVM→JS compiling, which I tried, and works, but would have to also compile the GHC runtime which is not straight-forward (to me) for it to actually run. 
+</li><li> hjscript — Beta. EDSL, not Haskell→JS. Works. Not <i>very</i> annoying to program in, but is JS semantics, not Haskell. Hackage package <a rel="nofollow" class="external text" href="http://hackage.haskell.org/package/HJScript">here.</a>
+</li><li> Some have also tried writing a Haskell→JS compiler to make a more direct JS-aware translation of code (to not have huge code output a la GHCJS, YHC, Emscripten).
+</li></ul>
+<p><br />
+</p>
+<h2> <span class="mw-headline" id="FP_-.3E_JS">4  FP -&gt; JS </span></h2>
+<h2> <span class="mw-headline" id="Ur.2FWeb">5  Ur/Web </span></h2>
+<p><a rel="nofollow" class="external free" href="http://www.impredicative.com/ur/">http://www.impredicative.com/ur/</a>
+</p><p>Perhaps the problem with Ur is that they are selling both a backend and a frontend together. Being a new language, the backend is lacking in libraries to be practical for many tasks. However, there is an RSS reader that is using Ur for the front-end and Haskell for the backend: <a rel="nofollow" class="external free" href="https://bazqux.com/">https://bazqux.com/</a>
+</p><p><br />
+</p>
+<h3> <span class="mw-headline" id="OCaml">5.1  OCaml </span></h3>
+<p>The OCaml -&gt; JS compiler is supposed to be good, it is now used at facebook for an internal in-browser code editor.
+<a rel="nofollow" class="external free" href="http://ocsigen.org/js_of_ocaml/">http://ocsigen.org/js_of_ocaml/</a>
+</p>
+<h3> <span class="mw-headline" id="GorrilaScript">5.2  GorrilaScript </span></h3>
+<p><a rel="nofollow" class="external free" href="http://ckknight.github.io/gorillascript/">http://ckknight.github.io/gorillascript/</a>
+</p><p>immutable by default, global type inference, macros, what coffeescript should have been. The syntax is similar to coffeescript
+</p><p><br />
+</p>
+<h3> <span class="mw-headline" id="JMacro">5.3  <a href="/haskellwiki/JMacro" title="JMacro" class="mw-redirect">JMacro</a> </span></h3>
+<p>On the Haskell wiki (see above) and on <a rel="nofollow" class="external text" href="http://hackage.haskell.org/package/jmacro">hackage</a>
+</p>
+<ul><li> Mature, Maintained
+</li><li> Not Haskell
+</li><li> Syntax is a fusion of Haskell and JavaScript
+</li><li> Untyped, but with syntactic correctness (at least) enforced at compile-time.
+</li><li> Embeddable through quasi-quoting
+</li><li> Support for various forms of code-generation
+</li></ul>
+<h3> <span class="mw-headline" id="Roy.2C_PureScript">5.4  Roy, PureScript </span></h3>
+<p><a rel="nofollow" class="external text" href="http://roy.brianmckenna.org/">Roy</a>: meld JavaScript semantics with functional languages. Experimental, but has many bread-and-butter Haskell features.
+Roy is written in JS. PureScript is written in Haskell.
+</p>
+<h3> <span class="mw-headline" id="Idris">5.5  Idris </span></h3>
+<p>Idris is a compiled language with dependent types, implemented in Haskell, with backends for both LLVM and JavaScript.  Experimental.
+</p>
+<ul><li> Full dependent types with dependent pattern matching where clauses, with rule, simple case expressions, pattern matching let and lambda bindings
+</li><li> Dependent records with projection and update
+</li><li> Type classes
+</li><li> Monad comprehensions
+</li><li> Syntactic conveniences for lists, tuples, dependent pairs do notation and idiom brackets
+</li><li> Indentation significant syntax
+</li><li> Extensible syntax
+</li><li> Tactic based theorem proving (influenced by Coq)
+</li><li> Cumulative universes
+</li><li> Totality checking
+</li><li> Simple foreign function interface (to C)
+</li><li> Hugs style interactive environment
+</li></ul>
+<p>Links:
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="http://idris-lang.org/">Website idris-lang.org</a> 
+</li><li> <a href="/haskellwiki/Dependent_type" title="Dependent type">Dependent Type in haskell wiki</a>
+</li><li> <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Dependent_type">WP (en) Dependent type</a> (with Idris listed under language comparison)
+</li></ul>
+<p><br />
+</p>
+<h2> <span class="mw-headline" id="Links">6  Links </span></h2>
+<ul><li> <a rel="nofollow" class="external text" href="https://github.com/yesodweb/yesod/wiki/Javascript-Options">Yesod - Javascript Options</a>
+</li><li> <a rel="nofollow" class="external text" href="http://chrisdone.com/tags/javascript">Chris Done Blog</a> - Tag: Javascript
+</li></ul>
+<h2> <span class="mw-headline" id="Footnotes">7  Footnotes </span></h2>
+<ol><li> Its support for closures is commonly noted as being one of JavaScript’s redeeming features.
+</li><li> Early binding allows for static verification of the existence of method-signature pairs (e.g. v-tables). Late binding does not give the compiler (or an IDE) enough information for existence verification, it has to be looked up at run-time.
+</li><li> There are several hinting libraries, which developers insist are indispensable tools when developing JavaScript seriously, such as JavaScript lint, JSLint, and JSure.
+</li><li> “Any non-trivial analysis is very difficult due to Javascript’s dynamic nature.” — Berke Durak, Ph.D., author of jsure.
+</li><li> Google Inc. thought it necessary to develop a compiler, Google Closure, which does type-checking and limited inference.
+</li></ol>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 74/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key wikidb:pcache:idhash:7764-0!*!0!1!en!*!* and timestamp 20140224022956 -->
+</div><div class="printfooter">
+Retrieved from "<a href="http://www.haskell.org/haskellwiki/index.php?title=The_JavaScript_Problem&amp;oldid=57552">http://www.haskell.org/haskellwiki/index.php?title=The_JavaScript_Problem&amp;oldid=57552</a>"</div>
+			<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/haskellwiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/haskellwiki/Category:Web" title="Category:Web">Web</a></li></ul></div></div>			<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div></div>
+		<div id="column-one">
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage"><a href="/haskellwiki/Haskell">Haskell</a></li>
+				<li id="n-portal"><a href="/haskellwiki/HaskellWiki:Community">Wiki community</a></li>
+				<li id="n-recentchanges"><a href="/haskellwiki/Special:RecentChanges">Recent changes</a></li>
+				<li id="n-randompage"><a href="/haskellwiki/Special:Random">Random page</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/haskellwiki/Special:WhatLinksHere/The_JavaScript_Problem">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/haskellwiki/Special:RecentChangesLinked/The_JavaScript_Problem">Related changes</a></li>
+<li id="t-specialpages"><a href="/haskellwiki/Special:SpecialPages">Special pages</a></li>
+				<li id="t-print"><a href="/haskellwiki/index.php?title=The_JavaScript_Problem&amp;printable=yes" rel="alternate">Printable version</a></li>				<li id="t-permalink"><a href="/haskellwiki/index.php?title=The_JavaScript_Problem&amp;oldid=57552">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="//www.mediawiki.org/"><img src="http://www.haskell.org/wikistatic/skins//common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 9 February 2014, at 20:20.</li>
+					<li id="viewcount">This page has been accessed 42,014 times.</li>
+					<li id="copyright">Recent content is available under <a href="/haskellwiki/HaskellWiki:Copyrights" title="HaskellWiki:Copyrights">a simple permissive license</a>.</li>
+					<li id="privacy"><a href="/haskellwiki/HaskellWiki:Privacy_policy" title="HaskellWiki:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/haskellwiki/HaskellWiki:About" title="HaskellWiki:About">About HaskellWiki</a></li>
+					<li id="disclaimer"><a href="/haskellwiki/HaskellWiki:General_disclaimer" title="HaskellWiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.user","mediawiki.page.ready"], null, true);
+}</script>
+<script src="http://www.haskell.org/haskellwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=hawiki&amp;*"></script>
+<!-- Served in 0.092 secs. --><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15375175-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body></html>
