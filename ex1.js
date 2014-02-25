@@ -1,3 +1,5 @@
+/* jshint strict: false */
+
 /**
  * ex-1 shanky shenky code
  */
@@ -31,7 +33,7 @@ var changeDetails = (function () {
   increaseAge = function (step) {
     var waitForIncrease = setTimeout(function() {
       doAgeIncrease(step);
-    }, step * 200)
+    }, step * 200);
   };
 
   console.log("6:", myName.first, myName.last, age, country);
