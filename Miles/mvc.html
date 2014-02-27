@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.1/handlebars.min.js"></script>
+
+	<script>
+
+		var Model, View, Controller, app;
+
+		// Views
+
+		View = function(){}
+
+		View.prototype.render = function() {
+			if(typeof this.model === 'undefined' || typeof this.markup === 'undefined') return !1;
+
+			this.template = Handlebars.compile(this.markup);
+
+			return this.template(this.model.getData());
+		};
+
+		// Model
+
+		Model = function(){}
+
+		Model.prototype.getData = function() {
+			return this.data;
+		};
+
+		// Controller
+
+		Controller = function(){} // Doesn't really do a whole lot, but could handle interesting view swapping
+
+		// Faux App object
+
+		app = function(){
+			var ProblemModel = new Model();
+			ProblemModel.data = {'problems': [{"priority": 1, "title": "JavaScript sucks", "description": "The depths to which JavaScript sucks is well-documented and well-understood. Its main faults are: its lack of module system, weak-typing, verbose function syntax, late binding², which has led to the creation of various static analysis tools to alleviate this language flaw, but with limited success (there is even a static type checker), finicky equality/automatic conversion, this behaviour, and lack of static types."},{"priority": 2, "title": "We need JavaScript", "description": "Using it for what it is good for, i.e. providing a platform for browser development, but not using the language per se, is therefore desirable, and many are working to achieve this, in varying forms. There are various ways to do it, but we ought to opt for compiling an existing language, Haskell, to JavaScript, because we do not have time to learn or teach other people a new language, garner a new library set and a new type checker and all that Haskell implementations provide.:"},{"priority": 3, "title": "No OOP ", "description": "I am not familiar with any other way to structure imperative programs. Yes, JavaScript has a rudimentary object model, but literally no one knew how it actually worked."},{"priority": 4, "title": "No standard library", "description": "Copying functions from forums and pasting them into your code. Not fun."}]};
+
+			var ProblemController = new Controller();
+
+			ProblemController.initialize = function(){
+				var ProblemView = new View();
+				ProblemView.model = ProblemModel;
+				ProblemView.markup = $('#problem-markup').html();
+
+				$(document.body).html(ProblemView.render());
+			}
+
+			ProblemController.initialize();
+		};
+
+		// When jQuery is ready, go go!
+		$(app);
+
+	</script>
+
+	<script id="problem-markup" type='text/x-handlebars-template'>
+		<table>
+			<tr>
+				<th>priority</th>
+				<th>Title</th>
+				<th>Problem</th>
+			</tr>
+			{{#each problems}}
+			<tr>
+				<td>{{priority}}</td>
+				<td>{{title}}</td>
+				<td>{{description}}</td>
+			</tr>
+			{{/each}}
+		</table>
+	</script>
+
+</body>
+</html>
